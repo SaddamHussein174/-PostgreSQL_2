@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS Альбомы (
 
 );
 CREATE TABLE IF NOT EXISTS Треки (
+	id_track SERIAL PRIMARY key,
 	Название_трека VARCHAR(100)  NOT NULL,
 	Длительность VARCHAR(10) NOT NULL,
 	id_album INTEGER REFERENCES Альбомы(id_album) NOT NULL
